@@ -2,7 +2,7 @@ name: Configure Azure environment
 
 on:
   pull_request:
-    types: [labeled] #
+    types: [labeled]
 
 env:
   IMAGE_REGISTRY_URL: ghcr.io
@@ -10,9 +10,9 @@ env:
   AZURE_APP_PLAN: actions-ttt-deployment
   AZURE_LOCATION: '"Central US"'
   ###############################################
-  ### Replace <username> with GitHub username ###
+  ### Replace brent-infomagnus with GitHub username ###
   ###############################################
-  AZURE_WEBAPP_NAME: <username>-ttt-app
+  AZURE_WEBAPP_NAME: brent-infomagnus-ttt-app
 
 jobs:
   setup-up-azure-resources:
